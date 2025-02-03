@@ -9,6 +9,7 @@
 @import "screens/friends.css";
 /* Screens */
 @import "components/screen-header.css";
+@import "components/user-component.css";
 
 
 body {
