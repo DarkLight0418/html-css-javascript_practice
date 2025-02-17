@@ -12,16 +12,18 @@
 
 .status-bar__column {
     width: 33%;
+    flex: 1;
 }
 
 .status-bar__column:first-child span {
     margin-right: 5px;
 }
 
-.status-bar__column:nth-child(2) {
+/* .status-bar__column:nth-child(2) {
     display: flex;
     justify-content: center;
 }
+    */
 
 .status-bar__column:last-child {
     display: flex;
