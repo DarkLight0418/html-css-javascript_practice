@@ -22,9 +22,24 @@
     padding-top: 15px;
 }
 
-.friends-screen__channel-header {
+.friends-screen__friends {
+    margin-top: 15px;
+    border-top: var(--main-border);
+    border-bottom: var(--main-border);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.friends-screen__channel-header .friends-screen__friends-header {
     margin-bottom: 30px;
     display: flex;
     justify-content: space-between;
     color: rgba(0, 0, 0, 0.5);
 }
+
+
+/*
+.friends-screen i {
+    
+}
+*/
