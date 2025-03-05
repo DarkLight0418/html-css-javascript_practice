@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Find - Kokoa Clone</title>
+    <title>More - Kokoa Clone</title>
 </head>
 <body>
     <div class="status-bar">
@@ -24,7 +24,7 @@
     </div>
     <header class="screen-header">
         <h1 class="screen-header__title">
-            Find
+            More
         </h1>
         <div class="screen-header__icons">
             <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
@@ -32,59 +32,46 @@
             <div class="point"> </div>
         </div>
     </header>
-
-    <main class="main-screen more-screen">
+    <main class="main-screen">
+        <div class="user-component">
+            <div class="user-component__column">
+                <img src="tempimg.jpg" class="user-component__avater user-component__avater--xl"/>
+                <div class="user-component__text">
+                    <h4 class="user-component__title">HJ Kim</h4>
+                    <h6 class="user-component__subtitle">this text whatever</h6>
+                </div>
+            </div>
+            <div class="user-component__column">
+                <i class="fa-solid fa-message fa-2x"></i>
+            </div>
+        </div>
         <div class="icon-row">
             <div class="icon-row__icon">
-                <i class="fa-solid fa-qrcode"></i>
-                <span>QR Code</span>
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>Calender</span>
             </div>
             <div class="icon-row__icon">
-                <i class="fa-solid fa-address-book"></i>
-                <span>Add by Contacts</span>
+                <i class="fa-solid fa-face-grin-squint"></i>
+                <span>Emoticons</span>
             </div>
             <div class="icon-row__icon">
-                <i class="fa-solid fa-fingerprint"></i>
-                <span>Add by ID</span>
+                <i class="fa-solid fa-paint-roller"></i>
+                <span>Themes</span>
+            </div>
+            <div class="icon-row__icon">
+                <i class="fa-solid fa-file-invoice"></i>
+                <span>Account</span>
+            </div>
+            <div class="icon-row__icon">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Invite</span>
             </div>
             <div class="icon-row__icon">
                 <i class="fa-solid fa-envelope"></i>
                 <span>Invite</span>
             </div>
         </div>
-        <div class="recommended-friends">
-            <h6 class="recommended-friends__title">Recommended Friends</h6>
-            <span>You have no recommend friends.</span>
-        </div>
-        <div class="open-chat">
-            <div class="open-chat__header">
-                <h4>Open Chat</h4>
-                <span>Go to OpenChat Home <i class="fa-solid fa-chevron-right fa-xs"></i>
-                </span>
-            </div>
-            <div class="open-post">
-                <div class="open-post__column">
-                    <h5 class="open-post__title">#GDG</h5>
-                    <h6 class="open-post__hashtags">#GDG#kangnam#community</h6>  <!-- 대분자는 디자인 요소 (css에서 바꿔줌)-->
-                    <div class="open-post__members">
-                        <img src="tempimg2.jpg"/>
-                        <span class="open-post__members-count">903 members</span>
-                        <div class="divider"></div>
-                        <span class="open-post__members-status">Active</span>
-                    </div>
-                </div>
-                <div class="open-post__column">
-                    <div class="open-post__photo">
-                        <img src="tempimg.jpg"/>
-                        <div class="open-post__heart-count">
-                            <i class="fa-solid fa-heart fa-xs"></i><span>342</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </main>
-    
     <nav class="nav">
         <ul class="nav__list">
             <li class="nav__btn"><a class="nav__link" href="friends.html"><i class="fa-regular fa-user fa-2x"></i></a></li>
@@ -97,6 +84,7 @@
                 <i class="fa-solid fa-ellipsis fa-2x"></i></a></li>
         </ul>
     </nav>
+
 
     <script 
     src="https://kit.fontawesome.com/5ddd5e2424.js" 

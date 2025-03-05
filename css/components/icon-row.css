@@ -1,0 +1,22 @@
+.icon-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.icon-row__icon {
+    display: flex;
+    flex-direction: column;  /* row : 옆,  column : 다음 줄에 */
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-row__icon i {
+    font-size: 35px;
+}
+
+.icon-row__icon span {
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
