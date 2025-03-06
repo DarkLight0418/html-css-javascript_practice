@@ -1,9 +1,45 @@
 .more-screen .icon-row {
     margin-top: 25px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .icon-row__icon {
     margin: 35px;
+}
+
+.more-suggestions {
+    margin-top: 50px;
+    border-top: var(--main-border);
+    padding-top: 40px;
+}
+
+.more-suggestions__title {
+    margin-bottom: 30px;
+}
+
+.more-suggestions__icons {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 20px;
+    padding: 10px;
+}
+
+.more-suggestions__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.more-suggestions__icon-image {
+    align-items: center;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.more-suggestions__icon-text {
+    text-align: center;
+    font-size: 15px;
+    margin: 15px 15px;
 }
