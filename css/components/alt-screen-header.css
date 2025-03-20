@@ -14,6 +14,10 @@
     margin-left: auto;
 }
 
+.alt-header__column i {
+    padding: 10px 10px;
+}
+
 .alt-header__title {
     font-size: 27px;
     font-weight: 600;
