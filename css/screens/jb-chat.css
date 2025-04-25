@@ -68,6 +68,7 @@
 .message-row {
     width: 100%;
     display: flex;
+    margin-bottom: 25px;
 }
 
 .message-row img {
@@ -94,6 +95,7 @@
     font-size: 18px;
     border-radius: 10px;
     border-top-left-radius: 0px;
+    margin-left: 0px;
     margin-right: 5px;
 }
 
@@ -111,9 +113,21 @@
     background-color: var(--yellow);
     border-top-right-radius: 0px;
     border-top-left-radius: 15px;
+    margin-right: 0px;
     margin-left: 5px;
 }
 
 .message-row--own .message__info {
-    flex-direction: row-reverse;
+    flex-direction: row-reverse; /* 상위 display : flex; */
 }
+
+
+/*
+.message-row--own .message__bubble {
+    order: 1;
+}
+
+.message-row--own .message__time {
+    order: 0;
+}
+    */
