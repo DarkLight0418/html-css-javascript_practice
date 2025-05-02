@@ -37,9 +37,41 @@
     color: rgba(0, 0, 0, 0.5);
 }
 
+@keyframes hideSplashScreen {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;  /* 마우스에 걸리지 않게 빠지는 속성 */
+    }
+}
 
 /*
 .friends-screen i {
     
 }
+*/
+
+#splash-screen {
+    background-color: var(--yellow);  
+    position: absolute;   /* 가장 가까운 relative인 부모에 맞춰 정렬 */
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 132px;
+    animation: hideSplashScreen 0.3s ease-in-out forwards;   /* forwards 마지막 키프레임 기억 유지*/
+    animation-delay: 2s;
+}
+
+/*
+
+.fa-comment {
+    color: #2E363E;
+    background-color: var(--yellow);
+}
+
 */
