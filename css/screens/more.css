@@ -1,14 +1,14 @@
-.more-screen .icon-row {
+.main-screen .icon-row {
     margin-top: 25px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
 }
 
 .icon-row__icon {
-    margin: 10px;
+    margin: 10.5px;
     box-sizing: border-box;
-    width: 22%;
+    width: 20%;
 }
 
 .more-suggestions {
