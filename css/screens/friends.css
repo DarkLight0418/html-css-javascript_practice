@@ -64,7 +64,7 @@
     align-items: center;
     font-size: 132px;
     animation: hideSplashScreen 0.3s ease-in-out forwards;   /* forwards 마지막 키프레임 기억 유지*/
-    animation-delay: 2s;
+    animation-delay: 1s;
 }
 
 /*
