@@ -43,8 +43,10 @@
     position: absolute;
     left: 15px;
     bottom: 15px;
-    animation: notificationAnimation 0.5s ease-in-out;  /* infinite 무한히 반복되는 속성 */
-    animation-delay: 0.5s;  /* 임의로 딜레이 줘서 올라옴과 동시에 한번 작동하도록 설정 */
+}
+.nav__notification:hover {
+    animation: notificationAnimation 2s ease-in-out;  /* infinite 무한히 반복되는 속성 */
+    /* animation-delay: 0.5s;  임의로 딜레이 줘서 올라옴과 동시에 한번 작동하도록 설정 */
 }
 
 .nav__ellipsis {
