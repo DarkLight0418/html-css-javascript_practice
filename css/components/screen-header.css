@@ -31,8 +31,26 @@
     to {
         transform: rotateZ(360deg);
     }
+
 }
 
+@keyframes zoomIcons {
+    from {
+        transform: none;
+    }
+    to {
+        transform: scale(1.5);
+    }
+}
+
+/* 애니메이션 중첩 필요 20250512 */
 .screen-header__icons .fa-gear:hover {
-    animation: rotateCog 1.5s linear infinite;
+    animation-name: rotateCog, zoomIcons; 
+    animation-duration :1.5s linear infinite;
+}
+
+.screen-header__icons .fa-magnifying-glass:hover ,
+.screen-header__icons .fa-music:hover,
+.screen-header__icons .fa-gear:hover {
+    animation: zoomIcons 0.4s linear forwards;
 }
