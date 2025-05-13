@@ -148,7 +148,7 @@
     background-color: white;
     display: flex;
     justify-content: space-between;
-    padding: 5px 25px;
+    padding: 5px 30px;
     box-sizing: border-box;
     align-items: center;
     transition: transform 0.3s ease-in-out;
@@ -170,7 +170,7 @@
 
 .reply input {
     padding: 15px;  /* column에 먼저 width 속성 주셔야 해요 */
-    width: 100%;
+    width: 99%;
     border: var(--main-border);
     border-radius: 20px;
     transition: all 0.3s ease-in-out;
