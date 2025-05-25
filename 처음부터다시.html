@@ -1,0 +1,123 @@
+<!DOCTYPE html>  <!-- 현재 문서가 HTML 언어로 작성한 웹 문서라는 뜻 -->
+<html lang="ko">  <!-- 웹 문서의 시작과 끝 -->
+    <head>  <!-- 웹 브라우저가 웹 문서를 해석하는 데 필요한 정보를 입력하는 부분 -->
+        <meta charset="UTF-8">
+        <title>HTML 기본문서</title>
+        <style>
+            body {
+                position: relative;
+                left: 100px;
+                top: 30px;
+                height: 100vh;
+            }
+            .active {
+                color:blue;
+            }
+            table, th, td {
+                border: 3px solid #ccc;
+                border-collapse: separate;
+                transition: ease-in-out;
+            }
+            table, th, td :hover {
+                border: 3px solid black;
+            }
+            th, td {
+                padding: 10px 20px;
+            }
+            
+            .no1 {
+                display: flex;
+            }
+
+            .no1__ol {
+                padding: 10px 10px;
+            }
+
+            .imgnotice {
+                justify-content: center;
+                align-items: center
+            }
+            div {
+                border: 3px solid gray;
+             /*   transition: transform 1s ease-in-out;
+            }
+            div:hover {
+                transform: rotate(90deg);
+            */}
+        </style>
+    </head>
+    <body>  <!-- 실제 웹 브라우저 화면에 나타나는 내용 -->
+        <header>
+            <h1>웹 문서 만들기</h1>
+            <hr>
+            <section>
+                <span class="no1">
+                    <ol class="no1__ol">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li><a class="active">자바스크립트</a></li>
+                        <li>그 외 기타</li>
+                    </ol>
+                    <div>Empty</div>
+                    <div>Unknown</div>
+                </span>
+                <dl>
+                    <dt>이름</dt>
+                    <dd>값</dd>
+                    <dt>name</dt>
+                    <dd>value</dd>
+                </dl>
+            </section>
+            <section>
+                <img src="흠.jpg" alt="새벽" class="imgnotice" width="40%">
+                <table>
+                    <caption>표</caption>
+                    <tr>
+                        <td>1행 1열</td>
+                        <td>1행 2열</td>
+                        <th rowspan="2">핵심</th>
+                    </tr>
+                    <tr>
+                        <td>2행 1열</td>
+                        <td>2행 2열</td>
+                    </tr>
+                </table>
+            </section>
+        </header>
+        <h2>구성 요소</h2>
+        <table>
+            <caption><b>구성 요소들</b></caption>
+            <colgroup>
+                <col style="background-color:#eee;">  <!-- 첫번째 열 배경색 지정-->
+                <col>  <!-- 스타일이 없어도 <col> 명시 -->
+                <col style="width: 150px;">
+                <col style="width: 150px;">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>hmm</th>
+                    <th>용도</th>
+                    <th>중량</th>
+                    <th>개수</th>
+                    <th>가격</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
