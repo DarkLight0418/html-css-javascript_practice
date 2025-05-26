@@ -9,4 +9,8 @@ let isTeaWanted = confirm("차 한 잔 드릴까요?");  // 확인 === true, 취
 alert(`안녕하세요! ${userName}님!`);
 alert(`차 주문 여부 : ${isTeaWanted}`);
 
-document.innerHTML("반갑습니다!");
+if (isTeaWanted === true) {
+    document.getElementsByClassName("greeting")[0].innerHTML = `반갑습니다 ${userName}님! 좋은 하루 되세요 :)`;
+} else {
+    document.getElementsByClassName("greeting")[0].innerHTML = `알겠습니다! 좋은 하루 되세요 ${userName}님 :)`;
+}

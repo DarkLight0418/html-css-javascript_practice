@@ -5,4 +5,4 @@ console.log(r);
 let emm = "344";
 emm = 23;
 
-console.log(emm)
+console.log(emm);
